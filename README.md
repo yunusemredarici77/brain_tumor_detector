@@ -5,10 +5,10 @@ So i discover that we can even increase accuracy by using monte carlo dropout te
 DENSENET
 DenseNet architecture is  basically layer connections to each other . In this way information from first layer is also direction pass to the last layer.
 For L layers, there are L(L+1)/2 direct connections. For each layer, the feature maps of all the preceding layers are used as inputs, and its own feature maps are used as input for each subsequent layers. Since I have used transfer learning over denseNet in order to make the program learn better i have added 5 more trainable layers so with this diffirent dataset model got better accuracy.
-/n
+<br/><br/>
 Custom Arcitecture
 I have used 6 convolution layers with start 16 feature maps and end with 256 feature maps and also each layer are followed by mac pooling and relu activation function. Then fully connected layer has started with 512 nodes by followed relu activation function again.Eventually it ends with output layer with sigmoid function with 1 node.
-<img width="271" alt="Picture1" src="https://user-images.githubusercontent.com/56913028/194730932-6511e5a2-66fa-46cf-9e9c-995c2db485ef.png">
+<img width="271" alt="Picture1" src="https://user-images.githubusercontent.com/56913028/194730932-6511e5a2-66fa-46cf-9e9c-995c2db485ef.png"><br/><br/>
 DATASET
 MRI  dataset (classified as Benign Tumor, Malignant Tumor, Pituitary Tumor, etc. Kaggle )
 Subset of the Tiny Images dataset and consists of 7000 160x160x1 color images
